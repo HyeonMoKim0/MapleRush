@@ -1,4 +1,4 @@
-@Logic
+﻿@Logic
 script CombatPrimitives extends Logic
 
 	-- 서버측 활성 적 공격 레코드 목록 (F5 공격 데이터 모델)
@@ -33,6 +33,8 @@ script CombatPrimitives extends Logic
 			hitAt = now + hitDelay,
 			expireAt = now + hitDelay + 0.25,
 			canceled = false,
+			-- 보스 패턴이 BossController에서 주입(평타/일반적은 nil). TryParry가 그로기 충전 대상 판별에 사용.
+			bossEntityId = nil,
 		}
 		table.insert(self.activeAttacks, rec)
 		return rec
