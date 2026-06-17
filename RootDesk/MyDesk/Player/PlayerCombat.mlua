@@ -1,4 +1,4 @@
-@Component
+﻿@Component
 script PlayerCombat extends Component
 
 	property number lastAttackTime = -999.0

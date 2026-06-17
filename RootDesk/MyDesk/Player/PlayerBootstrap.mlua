@@ -1,4 +1,4 @@
-@Logic
+﻿@Logic
 script PlayerBootstrap extends Logic
 
 	@EventSender("Service", "UserService")

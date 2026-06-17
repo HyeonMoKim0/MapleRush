@@ -1,4 +1,4 @@
-@Component
+﻿@Component
 script BossController extends Component
 
 	-- delay / windup (패턴 풀에서 랜덤 선택, 가변 개수 지원 — stage_design §1.4.3)

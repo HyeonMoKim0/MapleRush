@@ -1,4 +1,4 @@
-@Component
+﻿@Component
 script EnemyHealth extends Component
 
 	property number MaxHP = 30.0

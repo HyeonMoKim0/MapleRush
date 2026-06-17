@@ -1,4 +1,4 @@
-@Component
+﻿@Component
 script EnemyRanged extends Component
 
 	property number DetectRadius = 5.0

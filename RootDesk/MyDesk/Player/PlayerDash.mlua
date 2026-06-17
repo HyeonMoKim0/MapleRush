@@ -1,4 +1,4 @@
-@Component
+﻿@Component
 script PlayerDash extends Component
 
 	-- ========== 공개 상태 (다른 스크립트/HUD가 읽는 계약) ==========

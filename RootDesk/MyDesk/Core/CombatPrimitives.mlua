@@ -1,4 +1,4 @@
-@Logic
+﻿@Logic
 script CombatPrimitives extends Logic
 
 	-- 서버측 활성 적 공격 레코드 목록 (F5 공격 데이터 모델)

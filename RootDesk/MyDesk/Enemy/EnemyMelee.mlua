@@ -1,4 +1,4 @@
-@Component
+﻿@Component
 script EnemyMelee extends Component
 
 	property number DetectRadius = 3.0

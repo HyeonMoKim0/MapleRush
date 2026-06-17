@@ -1,4 +1,4 @@
-@Logic
+﻿@Logic
 script GameConstants extends Logic
 
 	-- ========== 플레이어 기본 스탯 (player_design_doc ver3 §1.1) ==========
