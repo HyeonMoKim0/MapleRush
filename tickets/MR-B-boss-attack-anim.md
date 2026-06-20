@@ -1,7 +1,7 @@
 ---
 id: MR-B
 title: 보스 공격 애니메이션 추가
-status: review
+status: done
 owner: D4LGONA
 area: script
 touches:
@@ -10,7 +10,7 @@ touches:
 depends_on: []
 branch: "D4LGONA/boss-attack-anim"
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-06-20
 ---
 
 # 보스 공격 애니메이션 추가
