@@ -49,7 +49,8 @@ script GameConstants extends Logic
 
 	property number DashDuration = 0.1
 
-	property number DashDistance = 4.0
+	-- 대시 이동 거리 = 플레이어 5체 길이(base 가로1 ×5) = 5.0 (player_design_doc §3.1.2). 사거리 원·클램프 최대치가 이 값에서 파생.
+	property number DashDistance = 5.0
 
 	-- 대시가 블록 '측면(벽)'에 막혀 정지할 때 벽으로부터 띄울 마진 (플레이어가 벽에 안 박히게; 반폭 0.33+여유).
 	-- 측면(x축) 진입에만 적용 — 바닥/천장(y축, 위·아래 대시)엔 미적용(착지 스냅이 담당)해 하향 대시 0거리 회귀 방지.
@@ -139,10 +140,10 @@ script GameConstants extends Logic
 	property number RewardAbilityChance = 0.15
 
 	-- ========== 층 / 스테이지 진행 ==========
-	-- 데모: 일반 2회 → 상점 → 보스 → 클리어 (1층 단판).
-	property integer Floor1NormalStages = 2
+	-- 기획: 1층 일반 4회 → 상점 → 보스, 2층 5회(NormalStagesForFloor=4+(층-1)). 구현목표 2층 (stage_design §2.2.3).
+	property integer Floor1NormalStages = 4
 
-	property integer MaxFloors = 1
+	property integer MaxFloors = 2
 
 	-- 스테이지 타입별 전투/상점 맵 (일반=map02, 보스=map03, 상점=map04).
 	property string MapNormal = "map02"
