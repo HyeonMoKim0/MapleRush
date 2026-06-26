@@ -1,7 +1,7 @@
 ---
 id: MR-C
 title: 상점 구매 확인 팝업
-status: review
+status: done
 owner: D4LGONA
 area: ui
 touches:
