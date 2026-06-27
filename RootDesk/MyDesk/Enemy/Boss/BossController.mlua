@@ -113,7 +113,10 @@ script BossController extends Component
 			self.currentPattern = "slam"
 			self.phase = "windup"
 			self.phaseTimer = 0.8
-			self.pendingAttack = _CombatPrimitives:RegisterEnemyAttack(myCenter, 1.5, 1, true, 0.8, self.Entity)
+			local sFacing = 1
+			if playerCenter.x < myCenter.x then sFacing = -1 end
+			local sf = _GameConstants.BossSlamBoxForward
+			self.pendingAttack = _CombatPrimitives:RegisterEnemyAttackBox(Vector2(myCenter.x + sFacing * sf * 0.5, myCenter.y), sf * 0.5, _GameConstants.BossSlamBoxHeight * 0.5, 1, true, 0.8, self.Entity)
 			self.pendingAttack.bossEntityId = self.Entity.Name
 			self:StopMove()
 			self:PlayClip(_GameConstants.BossAttackClip)
@@ -129,7 +132,7 @@ script BossController extends Component
 			self.currentPattern = "redSmash"
 			self.phase = "windup"
 			self.phaseTimer = 1.0
-			self.pendingAttack = _CombatPrimitives:RegisterEnemyAttack(myCenter, 2.0, 1, false, 1.0, self.Entity)
+			self.pendingAttack = _CombatPrimitives:RegisterEnemyAttackBox(myCenter, _GameConstants.BossRedSmashBoxHalfW, _GameConstants.BossRedSmashBoxHalfH, 1, false, 1.0, self.Entity)
 			self:StopMove()
 			self:PlayClip(_GameConstants.BossSkillClip)
 			log("[BossController] pattern RED SMASH (red — unparryable, windup 1.0s)")
@@ -142,7 +145,7 @@ script BossController extends Component
 		if self.currentPattern == "slam" or self.currentPattern == "redSmash" then
 			local rec = self.pendingAttack
 			if rec ~= nil and rec.canceled == false then
-				if _CombatPrimitives:CircleOverlap(rec.center, rec.radius, playerCenter, 0.5) then
+				if _CombatPrimitives:RecordOverlapsCircle(rec, playerCenter, 0.5) then
 					---@type PlayerHit
 					local hitComp = player:GetComponent("script.PlayerHit")
 					if hitComp ~= nil then
