@@ -110,6 +110,9 @@ script PlayerDashGizmo extends Component
 		-- (2) 최대 사거리 원
 		_GizmoManager:Circle(center, _GameConstants.DashDistance, Color(0.3, 0.8, 1.0, 0.95), _GameConstants.DashGizmoLineWidth)
 
+		-- (2b) 플레이어 중심 마커 원(반지름 1, 밝은 노랑): 사거리 원은 반지름 5라 가장자리에만 보임 → 작은 원으로 플레이어 바로 곁에서 따라옴이 보이게.
+		_GizmoManager:Circle(center, 1.0, Color(1.0, 0.9, 0.2, 1.0), _GameConstants.DashGizmoRayWidth)
+
 		-- (3) 레이 + 원점/도착 점
 		local rayColor = Color(0.2, 1.0, 0.3, 0.9)
 		local oColor = Color(0.2, 0.8, 1.0, 1.0)
