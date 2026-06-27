@@ -32,16 +32,20 @@ script CombatPrimitives extends Logic
 	end
 
 	@ExecSpace("ServerOnly")
-	method table RegisterEnemyAttack(Vector2 center, number radius, number damage, boolean parryable, number hitDelay, Entity sourceEntity)
-		-- 적 근접 공격 레코드 등록(서버). hitDelay(텔레그래프) 후 명중 판정, 직후 만료. 반환: 레코드 테이블.
+	method table RegisterEnemyAttackBox(Vector2 boxCenter, number hw, number hh, number damage, boolean parryable, number hitDelay, Entity sourceEntity)
+		-- 적 공격 박스 레코드 등록(서버). hitDelay(텔레그래프) 후 명중 판정, 직후 만료. 반환: 레코드 테이블.
+		-- boxCenter/hw/hh는 호출부가 전방/중앙 기하로 계산해 넘김(프리미티브는 AABB만 저장).
 		-- sourceEntity: 공격 주체 적(맵/유저 산출용 — 기즈모 브로드캐스트 대상). 판정 로직엔 미사용(무손상).
 		if self.activeAttacks == nil then self.activeAttacks = {} end
 		self.nextAttackId += 1
 		local now = _UtilLogic.ServerElapsedSeconds
 		local rec = {
 			id = self.nextAttackId,
-			center = center,
-			radius = radius,
+			shape = "box",
+			center = boxCenter,
+			hw = hw,
+			hh = hh,
+			radius = 0,
 			damage = damage,
 			parryable = parryable,
 			hitAt = now + hitDelay,
@@ -52,8 +56,16 @@ script CombatPrimitives extends Logic
 		}
 		table.insert(self.activeAttacks, rec)
 		-- 기즈모 통지: 남은 windup=hitDelay, 남은 life=hitDelay+0.25(=expireAt-now). 절대 ServerElapsedSeconds 누수 금지 — 상대초만.
-		self:BroadcastEnemyAttack(sourceEntity, rec.id, center, radius, hitDelay, hitDelay + 0.25, parryable)
+		self:BroadcastEnemyAttack(sourceEntity, rec.id, boxCenter, hw, hh, hitDelay, hitDelay + 0.25, parryable)
 		return rec
+	end
+
+	method boolean RecordOverlapsCircle(table rec, Vector2 circleCenter, number r)
+		-- 공격 레코드 vs 원 디스패처. 현 레코드는 전부 box지만 안전하게 circle도 처리.
+		if rec.shape == "box" then
+			return self:BoxCircleOverlap(rec.center, rec.hw, rec.hh, circleCenter, r)
+		end
+		return self:CircleOverlap(rec.center, rec.radius, circleCenter, r)
 	end
 
 	@ExecSpace("ServerOnly")
@@ -61,7 +73,7 @@ script CombatPrimitives extends Logic
 		-- 슬로우 모션 트리거 판정: 활성 적 공격 레코드 또는 적 투사체가 radius 내 존재하는지 (서버).
 		if self.activeAttacks ~= nil then
 			for _, rec in ipairs(self.activeAttacks) do
-				if rec.canceled == false and self:CircleOverlap(center, radius, rec.center, rec.radius) then
+				if rec.canceled == false and self:RecordOverlapsCircle(rec, center, radius) then
 					return true
 				end
 			end
@@ -565,8 +577,8 @@ script CombatPrimitives extends Logic
 	end
 
 	@ExecSpace("ServerOnly")
-	method void BroadcastEnemyAttack(Entity sourceEntity, number id, Vector2 center, number radius, number windup, number life, boolean parryable)
-		-- 소스 적이 속한 맵의 모든 유저 클라에 공격원 통지(1인 1런 전제). DrawGizmo off면 미전송(클라 목록 미증가).
+	method void BroadcastEnemyAttack(Entity sourceEntity, number id, Vector2 center, number hw, number hh, number windup, number life, boolean parryable)
+		-- 소스 적이 속한 맵의 모든 유저 클라에 공격 박스 통지(1인 1런 전제). DrawGizmo off면 미전송(클라 목록 미증가).
 		if _GameConstants.DrawGizmo == false then return end
 		if sourceEntity == nil or isvalid(sourceEntity) == false then return end
 		local map = sourceEntity.CurrentMap
@@ -575,7 +587,7 @@ script CombatPrimitives extends Logic
 		if users == nil then return end
 		for _, u in ipairs(users) do
 			if isvalid(u) and u.PlayerComponent ~= nil then
-				self:NotifyEnemyAttack(id, center, radius, windup, life, parryable, u.PlayerComponent.UserId)
+				self:NotifyEnemyAttack(id, center, hw, hh, windup, life, parryable, u.PlayerComponent.UserId)
 			end
 		end
 	end
@@ -595,8 +607,8 @@ script CombatPrimitives extends Logic
 	end
 
 	@ExecSpace("Client")
-	method void NotifyEnemyAttack(number id, Vector2 center, number radius, number windup, number life, boolean parryable)
-		-- 클라 수신: 공격원 기즈모 등록(같은 id 있으면 교체). recvAt 스냅샷 후 CombatGizmo가 카운트다운.
+	method void NotifyEnemyAttack(number id, Vector2 center, number hw, number hh, number windup, number life, boolean parryable)
+		-- 클라 수신: 공격 박스 기즈모 등록(같은 id 있으면 교체). recvAt 스냅샷 후 CombatGizmo가 카운트다운.
 		-- targetUserId는 @ExecSpace("Client") 라우팅용 암묵 인자로 호출부 '마지막'에 전달 — 선언 파라미터 아님(추가 금지).
 		if self.clientEnemyAttacks == nil then self.clientEnemyAttacks = {} end
 		for i = #self.clientEnemyAttacks, 1, -1 do
@@ -605,7 +617,8 @@ script CombatPrimitives extends Logic
 		table.insert(self.clientEnemyAttacks, {
 			id = id,
 			center = center,
-			radius = radius,
+			hw = hw,
+			hh = hh,
 			parryable = parryable,
 			windup = windup,
 			life = life,
