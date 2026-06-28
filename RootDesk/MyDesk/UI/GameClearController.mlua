@@ -1,14 +1,16 @@
 @Component
 script GameClearController extends Component
 
-	property Entity clearRoot = "bdccab3e-cfbd-43e7-afe0-36a2cbcad645"
+	property Entity clearRoot = "eaf31109-893d-43a5-9805-62e13cc88e52"
 
-	property TextComponent infoText = "6ac8cc1e-8dee-45b3-9b27-d60fd6823c5a"
+	property TextComponent statsText = "58bce7d9-40af-406d-80a4-fd91e3bdcf7d"
 
-	property ButtonComponent btnRestart = "2f0449f4-f290-4087-a8fc-290f552947bc"
+	property TextComponent scoreText = "393a9a12-ca34-450e-9eab-140bfe2a85aa"
+
+	property ButtonComponent btnRestart = "3c34751f-5e88-4f94-a614-2516d2b81735"
 
 	-- "로비로" 버튼.
-	property ButtonComponent btnLobby = "270d7a2e-910c-45c2-9360-18c6d4233bdd"
+	property ButtonComponent btnLobby = "d186d353-e683-4485-9e08-15b8d8d92f83"
 
 	property any hRestart = nil
 
@@ -33,9 +35,10 @@ script GameClearController extends Component
 
 	@ExecSpace("ClientOnly")
 	method void Open(integer score)
-		-- 게임 클리어 팝업: 영구 강화 점수 표시.
+		-- 게임 클리어 팝업 (PDF p.14 동일 레이아웃): 도달 층 · 처치 · 메소 + 영구 강화 점수.
 		self.clearRoot.Enable = true
-		self.infoText.Text = "영구 강화 점수 +" .. tostring(score) .. "   (누적 " .. tostring(_MetaProgression.MetaScore) .. ")"
+		self.statsText.Text = "도달 " .. tostring(_GameStateManager.CurrentFloor) .. "층   ·   처치 " .. tostring(_GameStateManager.RunKills) .. "   ·   메소 " .. tostring(math.floor(_GameStateManager.Meso))
+		self.scoreText.Text = "영구 강화 점수 +" .. tostring(score) .. "    (누적 " .. tostring(_MetaProgression.MetaScore) .. ")"
 		log("[GameClearController] opened (score=" .. tostring(score) .. ")")
 	end
 

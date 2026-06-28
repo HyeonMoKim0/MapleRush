@@ -1,14 +1,16 @@
 @Component
 script GameOverController extends Component
 
-	property Entity gameOverRoot = "a1166a8d-5196-492d-8288-11c185581403"
+	property Entity gameOverRoot = "50c12345-57eb-4ba9-9045-1e5af99aa65c"
 
-	property TextComponent infoText = "82a49e83-61db-4609-b3ef-e9ede966333a"
+	property TextComponent statsText = "bd54f3d1-6b01-4cb7-a7a6-7a201ecc022d"
 
-	property ButtonComponent btnRestart = "ce565144-8af4-4cbf-b9df-238e4cbc893e"
+	property TextComponent scoreText = "e8fb3e40-ea93-44aa-95c6-ce951e9bb347"
+
+	property ButtonComponent btnRestart = "f2940e7f-1ccf-4c5e-94b4-1bc44ea4b83c"
 
 	-- "로비로" 버튼 (로비 도입 — 런 포기하고 메인 로비 복귀).
-	property ButtonComponent btnLobby = "b06a57a0-a494-4372-a797-f51def98a86f"
+	property ButtonComponent btnLobby = "4c56358b-b3a5-4401-a4dc-e2e68fce59df"
 
 	property any hRestart = nil
 
@@ -32,11 +34,12 @@ script GameOverController extends Component
 	end
 
 	@ExecSpace("ClientOnly")
-	method void Open()
-		-- 게임오버 팝업 표시 (런 요약: 도달 층 · 클리어 · 메소).
+	method void Open(integer score)
+		-- 게임오버 팝업 (PDF p.14): 도달 층 · 처치 · 메소 + 영구 강화 점수.
 		self.gameOverRoot.Enable = true
-		self.infoText.Text = "도달 " .. tostring(_GameStateManager.CurrentFloor) .. "층  ·  일반 " .. tostring(_GameStateManager.NormalClears) .. " · 보스 " .. tostring(_GameStateManager.BossClears) .. "  ·  메소 " .. tostring(math.floor(_GameStateManager.Meso))
-		log("[GameOverController] opened")
+		self.statsText.Text = "도달 " .. tostring(_GameStateManager.CurrentFloor) .. "층   ·   처치 " .. tostring(_GameStateManager.RunKills) .. "   ·   메소 " .. tostring(math.floor(_GameStateManager.Meso))
+		self.scoreText.Text = "영구 강화 점수 +" .. tostring(score) .. "    (누적 " .. tostring(_MetaProgression.MetaScore) .. ")"
+		log("[GameOverController] opened (score+" .. tostring(score) .. ")")
 	end
 
 	@ExecSpace("ClientOnly")

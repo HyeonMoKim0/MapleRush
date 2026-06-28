@@ -1,7 +1,7 @@
 {
   "Id": "",
   "GameId": "",
-  "EntryKey": "ui://22e0683a-404b-4e8a-ad4c-9c39960dd992",
+  "EntryKey": "ui://37a2b2be-ccee-4175-a315-bac3716d78d1",
   "ContentType": "x-mod/ui",
   "Content": "",
   "Usage": 0,
@@ -14,7 +14,7 @@
     "Use": "Binary",
     "Entities": [
       {
-        "id": "22e0683a-404b-4e8a-ad4c-9c39960dd992",
+        "id": "37a2b2be-ccee-4175-a315-bac3716d78d1",
         "path": "/ui/GameOverGroup",
         "componentNames": "MOD.Core.UITransformComponent,MOD.Core.UIGroupComponent,MOD.Core.CanvasGroupComponent",
         "jsonString": {
@@ -113,7 +113,7 @@
         }
       },
       {
-        "id": "8923d62d-760f-4cb6-9ff6-b9748c5f044b",
+        "id": "af567c23-429d-41be-9480-e4a3974b4160",
         "path": "/ui/GameOverGroup/Controller",
         "componentNames": "MOD.Core.UITransformComponent,script.GameOverController",
         "jsonString": {
@@ -202,7 +202,7 @@
         }
       },
       {
-        "id": "a1166a8d-5196-492d-8288-11c185581403",
+        "id": "50c12345-57eb-4ba9-9045-1e5af99aa65c",
         "path": "/ui/GameOverGroup/Root",
         "componentNames": "MOD.Core.UITransformComponent",
         "jsonString": {
@@ -287,7 +287,7 @@
         }
       },
       {
-        "id": "2005d2cf-b178-44c4-aaf1-c5857fdde41b",
+        "id": "f7c8706f-b8f5-456a-8dfc-024e03832a3f",
         "path": "/ui/GameOverGroup/Root/Dimmer",
         "componentNames": "MOD.Core.UITransformComponent,MOD.Core.SpriteGUIRendererComponent",
         "jsonString": {
@@ -433,7 +433,7 @@
         }
       },
       {
-        "id": "71a4a84f-8a69-4205-80b3-3ef73fecd9a0",
+        "id": "b0f53ab6-0c47-4f93-ab4b-6ccbddc6137c",
         "path": "/ui/GameOverGroup/Root/Panel",
         "componentNames": "MOD.Core.UITransformComponent",
         "jsonString": {
@@ -469,20 +469,20 @@
               },
               "MobileOnly": false,
               "OffsetMax": {
-                "x": 380,
-                "y": 220
+                "x": 390,
+                "y": 240
               },
               "OffsetMin": {
-                "x": -380,
-                "y": -220
+                "x": -390,
+                "y": -240
               },
               "Pivot": {
                 "x": 0.5,
                 "y": 0.5
               },
               "RectSize": {
-                "x": 760,
-                "y": 440
+                "x": 780,
+                "y": 480
               },
               "UIMode": 1,
               "UIScale": {
@@ -518,7 +518,7 @@
         }
       },
       {
-        "id": "2c719ae7-005b-4dab-9b82-686ca95fc532",
+        "id": "7ef7d624-66c4-4832-ab76-74c3b2bc2cdb",
         "path": "/ui/GameOverGroup/Root/Panel/Bg",
         "componentNames": "MOD.Core.UITransformComponent,MOD.Core.SpriteGUIRendererComponent",
         "jsonString": {
@@ -566,8 +566,8 @@
                 "y": 0.5
               },
               "RectSize": {
-                "x": 760,
-                "y": 440
+                "x": 780,
+                "y": 480
               },
               "UIMode": 1,
               "UIScale": {
@@ -664,7 +664,7 @@
         }
       },
       {
-        "id": "713e7bbb-cfeb-4efa-8e40-125a8944a6bb",
+        "id": "449ee3c3-f5fb-4b30-90c5-5264e8a90694",
         "path": "/ui/GameOverGroup/Root/Panel/TitleBar",
         "componentNames": "MOD.Core.UITransformComponent,MOD.Core.SpriteGUIRendererComponent",
         "jsonString": {
@@ -700,19 +700,19 @@
               },
               "MobileOnly": false,
               "OffsetMax": {
-                "x": 380,
-                "y": 113
+                "x": 390,
+                "y": 123
               },
               "OffsetMin": {
-                "x": -380,
-                "y": 107
+                "x": -390,
+                "y": 117
               },
               "Pivot": {
                 "x": 0.5,
                 "y": 0.5
               },
               "RectSize": {
-                "x": 760,
+                "x": 780,
                 "y": 6
               },
               "UIMode": 1,
@@ -724,7 +724,7 @@
               "UIVersion": 2,
               "anchoredPosition": {
                 "x": 0,
-                "y": 110
+                "y": 120
               },
               "Position": {
                 "x": 0,
@@ -810,7 +810,7 @@
         }
       },
       {
-        "id": "7b8a8e30-d562-44b2-82de-6050bd09c101",
+        "id": "e3a4437a-3fe9-470f-beeb-c00542de858e",
         "path": "/ui/GameOverGroup/Root/Panel/Title",
         "componentNames": "MOD.Core.UITransformComponent,MOD.Core.SpriteGUIRendererComponent,MOD.Core.TextComponent",
         "jsonString": {
@@ -846,20 +846,20 @@
               },
               "MobileOnly": false,
               "OffsetMax": {
-                "x": 350,
-                "y": 192
+                "x": 360,
+                "y": 202
               },
               "OffsetMin": {
-                "x": -350,
-                "y": 108
+                "x": -360,
+                "y": 122
               },
               "Pivot": {
                 "x": 0.5,
                 "y": 0.5
               },
               "RectSize": {
-                "x": 700,
-                "y": 84
+                "x": 720,
+                "y": 80
               },
               "UIMode": 1,
               "UIScale": {
@@ -870,7 +870,7 @@
               "UIVersion": 2,
               "anchoredPosition": {
                 "x": 0,
-                "y": 150
+                "y": 162
               },
               "Position": {
                 "x": 0,
@@ -975,10 +975,10 @@
                 "b": 0.35294117647058826,
                 "a": 1
               },
-              "FontSize": 64,
+              "FontSize": 60,
               "IgnoreMapLayerCheck": false,
               "IsLocalizationKey": false,
-              "MaxSize": 76,
+              "MaxSize": 72,
               "MinSize": 10,
               "OrderInLayer": 0,
               "OutlineColor": {
@@ -1013,12 +1013,12 @@
         }
       },
       {
-        "id": "82a49e83-61db-4609-b3ef-e9ede966333a",
-        "path": "/ui/GameOverGroup/Root/Panel/InfoText",
+        "id": "bd54f3d1-6b01-4cb7-a7a6-7a201ecc022d",
+        "path": "/ui/GameOverGroup/Root/Panel/StatsText",
         "componentNames": "MOD.Core.UITransformComponent,MOD.Core.SpriteGUIRendererComponent,MOD.Core.TextComponent",
         "jsonString": {
-          "name": "InfoText",
-          "path": "/ui/GameOverGroup/Root/Panel/InfoText",
+          "name": "StatsText",
+          "path": "/ui/GameOverGroup/Root/Panel/StatsText",
           "nameEditable": true,
           "enable": true,
           "visible": true,
@@ -1049,20 +1049,20 @@
               },
               "MobileOnly": false,
               "OffsetMax": {
-                "x": 350,
-                "y": 52
+                "x": 360,
+                "y": 78
               },
               "OffsetMin": {
-                "x": -350,
-                "y": 8
+                "x": -360,
+                "y": 38
               },
               "Pivot": {
                 "x": 0.5,
                 "y": 0.5
               },
               "RectSize": {
-                "x": 700,
-                "y": 44
+                "x": 720,
+                "y": 40
               },
               "UIMode": 1,
               "UIScale": {
@@ -1073,7 +1073,7 @@
               "UIVersion": 2,
               "anchoredPosition": {
                 "x": 0,
-                "y": 30
+                "y": 58
               },
               "Position": {
                 "x": 0,
@@ -1173,12 +1173,12 @@
               "DropShadowDistance": 3,
               "Font": 0,
               "FontColor": {
-                "r": 0.7803921568627451,
-                "g": 0.803921568627451,
-                "b": 0.8549019607843137,
+                "r": 0.7137254901960784,
+                "g": 0.7372549019607844,
+                "b": 0.796078431372549,
                 "a": 1
               },
-              "FontSize": 28,
+              "FontSize": 26,
               "IgnoreMapLayerCheck": false,
               "IsLocalizationKey": false,
               "MaxSize": 40,
@@ -1205,7 +1205,7 @@
               },
               "SizeFit": false,
               "SortingLayer": "UI",
-              "Text": "도달 1층 · 일반 0 · 보스 0 · 메소 0",
+              "Text": "도달 1층 · 처치 0 · 메소 0",
               "UseConstraintX": false,
               "UseConstraintY": false,
               "UseOutLine": false,
@@ -1216,7 +1216,210 @@
         }
       },
       {
-        "id": "ce565144-8af4-4cbf-b9df-238e4cbc893e",
+        "id": "e8fb3e40-ea93-44aa-95c6-ce951e9bb347",
+        "path": "/ui/GameOverGroup/Root/Panel/ScoreText",
+        "componentNames": "MOD.Core.UITransformComponent,MOD.Core.SpriteGUIRendererComponent,MOD.Core.TextComponent",
+        "jsonString": {
+          "name": "ScoreText",
+          "path": "/ui/GameOverGroup/Root/Panel/ScoreText",
+          "nameEditable": true,
+          "enable": true,
+          "visible": true,
+          "localize": true,
+          "displayOrder": 4,
+          "pathConstraints": "/////",
+          "revision": 0,
+          "origin": {
+            "type": "Model",
+            "entry_id": "UIText",
+            "sub_entity_id": null,
+            "root_entity_id": null,
+            "replaced_model_id": null
+          },
+          "modelId": "uitext",
+          "@components": [
+            {
+              "@type": "MOD.Core.UITransformComponent",
+              "ActivePlatform": 255,
+              "AlignmentOption": 0,
+              "AnchorsMax": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "AnchorsMin": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "MobileOnly": false,
+              "OffsetMax": {
+                "x": 360,
+                "y": 20
+              },
+              "OffsetMin": {
+                "x": -360,
+                "y": -24
+              },
+              "Pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "RectSize": {
+                "x": 720,
+                "y": 44
+              },
+              "UIMode": 1,
+              "UIScale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "UIVersion": 2,
+              "anchoredPosition": {
+                "x": 0,
+                "y": -2
+              },
+              "Position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "QuaternionRotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "Scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "Enable": true
+            },
+            {
+              "@type": "MOD.Core.SpriteGUIRendererComponent",
+              "AnimClipPlayType": 0,
+              "EndFrameIndex": 2147483647,
+              "ImageRUID": {
+                "DataId": ""
+              },
+              "IgnoreMapLayerCheck": false,
+              "LocalPosition": {
+                "x": 0,
+                "y": 0
+              },
+              "LocalScale": {
+                "x": 1,
+                "y": 1
+              },
+              "MaterialId": "",
+              "OrderInLayer": 0,
+              "OverrideSorting": false,
+              "PlayRate": 1,
+              "PreserveAspect": false,
+              "PreserveSprite": 0,
+              "SortingLayer": "UI",
+              "StartFrameIndex": 0,
+              "Color": {
+                "r": 1,
+                "g": 1,
+                "b": 1,
+                "a": 0
+              },
+              "DropShadow": false,
+              "DropShadowAngle": 120,
+              "DropShadowColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0.72
+              },
+              "DropShadowDistance": 3,
+              "FillAmount": 1,
+              "FillCenter": true,
+              "FillClockWise": true,
+              "FillMethod": 0,
+              "FillOrigin": 0,
+              "FlipX": false,
+              "FlipY": false,
+              "FrameColumn": 1,
+              "FrameRate": 0,
+              "FrameRow": 1,
+              "Outline": false,
+              "OutlineColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 1
+              },
+              "OutlineWidth": 3,
+              "RaycastTarget": false,
+              "Type": 0,
+              "Enable": true
+            },
+            {
+              "@type": "MOD.Core.TextComponent",
+              "Alignment": 4,
+              "AllowAutomaticTranslation": true,
+              "BestFit": false,
+              "Bold": true,
+              "ConstraintX": 100,
+              "ConstraintY": 100,
+              "DropShadow": false,
+              "DropShadowAngle": 120,
+              "DropShadowColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0.72
+              },
+              "DropShadowDistance": 3,
+              "Font": 0,
+              "FontColor": {
+                "r": 1,
+                "g": 0.8470588235294118,
+                "b": 0.4196078431372549,
+                "a": 1
+              },
+              "FontSize": 30,
+              "IgnoreMapLayerCheck": false,
+              "IsLocalizationKey": false,
+              "MaxSize": 42,
+              "MinSize": 10,
+              "OrderInLayer": 0,
+              "OutlineColor": {
+                "r": 0.698039234,
+                "g": 0.698039234,
+                "b": 0.698039234,
+                "a": 1
+              },
+              "OutlineDistance": {
+                "x": 1,
+                "y": -1
+              },
+              "OutlineWidth": 1,
+              "Overflow": 0,
+              "OverrideSorting": false,
+              "Padding": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "SizeFit": false,
+              "SortingLayer": "UI",
+              "Text": "영구 강화 점수 +0",
+              "UseConstraintX": false,
+              "UseConstraintY": false,
+              "UseOutLine": false,
+              "Enable": true
+            }
+          ],
+          "@version": 1
+        }
+      },
+      {
+        "id": "f2940e7f-1ccf-4c5e-94b4-1bc44ea4b83c",
         "path": "/ui/GameOverGroup/Root/Panel/BtnRestart",
         "componentNames": "MOD.Core.UITransformComponent,MOD.Core.SpriteGUIRendererComponent,MOD.Core.ButtonComponent,MOD.Core.TextComponent",
         "jsonString": {
@@ -1226,7 +1429,7 @@
           "enable": true,
           "visible": true,
           "localize": true,
-          "displayOrder": 4,
+          "displayOrder": 5,
           "pathConstraints": "/////",
           "revision": 0,
           "origin": {
@@ -1253,19 +1456,19 @@
               "MobileOnly": false,
               "OffsetMax": {
                 "x": -20,
-                "y": -68
+                "y": -91
               },
               "OffsetMin": {
-                "x": -300,
-                "y": -152
+                "x": -310,
+                "y": -179
               },
               "Pivot": {
                 "x": 0.5,
                 "y": 0.5
               },
               "RectSize": {
-                "x": 280,
-                "y": 84
+                "x": 290,
+                "y": 88
               },
               "UIMode": 1,
               "UIScale": {
@@ -1275,8 +1478,8 @@
               },
               "UIVersion": 2,
               "anchoredPosition": {
-                "x": -160,
-                "y": -110
+                "x": -165,
+                "y": -135
               },
               "Position": {
                 "x": 0,
@@ -1469,7 +1672,7 @@
         }
       },
       {
-        "id": "b06a57a0-a494-4372-a797-f51def98a86f",
+        "id": "4c56358b-b3a5-4401-a4dc-e2e68fce59df",
         "path": "/ui/GameOverGroup/Root/Panel/BtnLobby",
         "componentNames": "MOD.Core.UITransformComponent,MOD.Core.SpriteGUIRendererComponent,MOD.Core.ButtonComponent,MOD.Core.TextComponent",
         "jsonString": {
@@ -1479,7 +1682,7 @@
           "enable": true,
           "visible": true,
           "localize": true,
-          "displayOrder": 5,
+          "displayOrder": 6,
           "pathConstraints": "/////",
           "revision": 0,
           "origin": {
@@ -1505,20 +1708,20 @@
               },
               "MobileOnly": false,
               "OffsetMax": {
-                "x": 300,
-                "y": -68
+                "x": 310,
+                "y": -91
               },
               "OffsetMin": {
                 "x": 20,
-                "y": -152
+                "y": -179
               },
               "Pivot": {
                 "x": 0.5,
                 "y": 0.5
               },
               "RectSize": {
-                "x": 280,
-                "y": 84
+                "x": 290,
+                "y": 88
               },
               "UIMode": 1,
               "UIScale": {
@@ -1528,8 +1731,8 @@
               },
               "UIVersion": 2,
               "anchoredPosition": {
-                "x": 160,
-                "y": -110
+                "x": 165,
+                "y": -135
               },
               "Position": {
                 "x": 0,

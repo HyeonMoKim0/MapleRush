@@ -1,7 +1,7 @@
 {
   "Id": "",
   "GameId": "",
-  "EntryKey": "ui://13fc5d7b-eed3-4dcf-920c-2414042e3d32",
+  "EntryKey": "ui://72b4f8ea-ae30-47f7-a6ab-273fd645024d",
   "ContentType": "x-mod/ui",
   "Content": "",
   "Usage": 0,
@@ -14,7 +14,7 @@
     "Use": "Binary",
     "Entities": [
       {
-        "id": "13fc5d7b-eed3-4dcf-920c-2414042e3d32",
+        "id": "72b4f8ea-ae30-47f7-a6ab-273fd645024d",
         "path": "/ui/GameClearGroup",
         "componentNames": "MOD.Core.UITransformComponent,MOD.Core.UIGroupComponent,MOD.Core.CanvasGroupComponent",
         "jsonString": {
@@ -113,7 +113,7 @@
         }
       },
       {
-        "id": "47c7a4db-ab92-4837-803e-b791b5711039",
+        "id": "eccf850e-09d3-4a05-86ff-a5558d6c32c1",
         "path": "/ui/GameClearGroup/Controller",
         "componentNames": "MOD.Core.UITransformComponent,script.GameClearController",
         "jsonString": {
@@ -202,7 +202,7 @@
         }
       },
       {
-        "id": "bdccab3e-cfbd-43e7-afe0-36a2cbcad645",
+        "id": "eaf31109-893d-43a5-9805-62e13cc88e52",
         "path": "/ui/GameClearGroup/Root",
         "componentNames": "MOD.Core.UITransformComponent",
         "jsonString": {
@@ -287,7 +287,7 @@
         }
       },
       {
-        "id": "47e23ea2-2f87-4c32-b42a-18b786fc1978",
+        "id": "dd2fa339-e5db-4869-9489-f71d190c3565",
         "path": "/ui/GameClearGroup/Root/Dimmer",
         "componentNames": "MOD.Core.UITransformComponent,MOD.Core.SpriteGUIRendererComponent",
         "jsonString": {
@@ -433,7 +433,7 @@
         }
       },
       {
-        "id": "6333fb13-4ef9-40c0-9fe5-561104714ae5",
+        "id": "621c0ba9-6231-4a8a-a284-fc4f27ce3685",
         "path": "/ui/GameClearGroup/Root/Panel",
         "componentNames": "MOD.Core.UITransformComponent",
         "jsonString": {
@@ -469,20 +469,20 @@
               },
               "MobileOnly": false,
               "OffsetMax": {
-                "x": 380,
-                "y": 220
+                "x": 390,
+                "y": 240
               },
               "OffsetMin": {
-                "x": -380,
-                "y": -220
+                "x": -390,
+                "y": -240
               },
               "Pivot": {
                 "x": 0.5,
                 "y": 0.5
               },
               "RectSize": {
-                "x": 760,
-                "y": 440
+                "x": 780,
+                "y": 480
               },
               "UIMode": 1,
               "UIScale": {
@@ -518,7 +518,7 @@
         }
       },
       {
-        "id": "3cfa3400-67f3-466b-ab5d-53f9098b848b",
+        "id": "a996dff7-5868-403d-9b19-bbbc92e6391d",
         "path": "/ui/GameClearGroup/Root/Panel/Bg",
         "componentNames": "MOD.Core.UITransformComponent,MOD.Core.SpriteGUIRendererComponent",
         "jsonString": {
@@ -566,8 +566,8 @@
                 "y": 0.5
               },
               "RectSize": {
-                "x": 760,
-                "y": 440
+                "x": 780,
+                "y": 480
               },
               "UIMode": 1,
               "UIScale": {
@@ -664,7 +664,7 @@
         }
       },
       {
-        "id": "955105c3-b677-4ac9-ad4a-e7f8915ad077",
+        "id": "8638b8a7-0cad-4291-a329-31de3cdbf7a9",
         "path": "/ui/GameClearGroup/Root/Panel/TitleBar",
         "componentNames": "MOD.Core.UITransformComponent,MOD.Core.SpriteGUIRendererComponent",
         "jsonString": {
@@ -700,19 +700,19 @@
               },
               "MobileOnly": false,
               "OffsetMax": {
-                "x": 380,
-                "y": 113
+                "x": 390,
+                "y": 123
               },
               "OffsetMin": {
-                "x": -380,
-                "y": 107
+                "x": -390,
+                "y": 117
               },
               "Pivot": {
                 "x": 0.5,
                 "y": 0.5
               },
               "RectSize": {
-                "x": 760,
+                "x": 780,
                 "y": 6
               },
               "UIMode": 1,
@@ -724,7 +724,7 @@
               "UIVersion": 2,
               "anchoredPosition": {
                 "x": 0,
-                "y": 110
+                "y": 120
               },
               "Position": {
                 "x": 0,
@@ -810,7 +810,7 @@
         }
       },
       {
-        "id": "4dbf369f-8fd8-4836-b8e0-aaed62bfc9df",
+        "id": "13f04569-2305-4c9d-9ea6-a5192194f8fd",
         "path": "/ui/GameClearGroup/Root/Panel/Title",
         "componentNames": "MOD.Core.UITransformComponent,MOD.Core.SpriteGUIRendererComponent,MOD.Core.TextComponent",
         "jsonString": {
@@ -846,20 +846,20 @@
               },
               "MobileOnly": false,
               "OffsetMax": {
-                "x": 350,
-                "y": 192
+                "x": 360,
+                "y": 202
               },
               "OffsetMin": {
-                "x": -350,
-                "y": 108
+                "x": -360,
+                "y": 122
               },
               "Pivot": {
                 "x": 0.5,
                 "y": 0.5
               },
               "RectSize": {
-                "x": 700,
-                "y": 84
+                "x": 720,
+                "y": 80
               },
               "UIMode": 1,
               "UIScale": {
@@ -870,7 +870,7 @@
               "UIVersion": 2,
               "anchoredPosition": {
                 "x": 0,
-                "y": 150
+                "y": 162
               },
               "Position": {
                 "x": 0,
@@ -975,10 +975,10 @@
                 "b": 0.6588235294117647,
                 "a": 1
               },
-              "FontSize": 64,
+              "FontSize": 60,
               "IgnoreMapLayerCheck": false,
               "IsLocalizationKey": false,
-              "MaxSize": 76,
+              "MaxSize": 72,
               "MinSize": 10,
               "OrderInLayer": 0,
               "OutlineColor": {
@@ -1013,12 +1013,12 @@
         }
       },
       {
-        "id": "6ac8cc1e-8dee-45b3-9b27-d60fd6823c5a",
-        "path": "/ui/GameClearGroup/Root/Panel/InfoText",
+        "id": "58bce7d9-40af-406d-80a4-fd91e3bdcf7d",
+        "path": "/ui/GameClearGroup/Root/Panel/StatsText",
         "componentNames": "MOD.Core.UITransformComponent,MOD.Core.SpriteGUIRendererComponent,MOD.Core.TextComponent",
         "jsonString": {
-          "name": "InfoText",
-          "path": "/ui/GameClearGroup/Root/Panel/InfoText",
+          "name": "StatsText",
+          "path": "/ui/GameClearGroup/Root/Panel/StatsText",
           "nameEditable": true,
           "enable": true,
           "visible": true,
@@ -1049,20 +1049,20 @@
               },
               "MobileOnly": false,
               "OffsetMax": {
-                "x": 350,
-                "y": 52
+                "x": 360,
+                "y": 78
               },
               "OffsetMin": {
-                "x": -350,
-                "y": 8
+                "x": -360,
+                "y": 38
               },
               "Pivot": {
                 "x": 0.5,
                 "y": 0.5
               },
               "RectSize": {
-                "x": 700,
-                "y": 44
+                "x": 720,
+                "y": 40
               },
               "UIMode": 1,
               "UIScale": {
@@ -1073,7 +1073,7 @@
               "UIVersion": 2,
               "anchoredPosition": {
                 "x": 0,
-                "y": 30
+                "y": 58
               },
               "Position": {
                 "x": 0,
@@ -1173,15 +1173,218 @@
               "DropShadowDistance": 3,
               "Font": 0,
               "FontColor": {
-                "r": 0.7803921568627451,
-                "g": 0.803921568627451,
-                "b": 0.8549019607843137,
+                "r": 0.7137254901960784,
+                "g": 0.7372549019607844,
+                "b": 0.796078431372549,
                 "a": 1
               },
-              "FontSize": 28,
+              "FontSize": 26,
               "IgnoreMapLayerCheck": false,
               "IsLocalizationKey": false,
               "MaxSize": 40,
+              "MinSize": 10,
+              "OrderInLayer": 0,
+              "OutlineColor": {
+                "r": 0.698039234,
+                "g": 0.698039234,
+                "b": 0.698039234,
+                "a": 1
+              },
+              "OutlineDistance": {
+                "x": 1,
+                "y": -1
+              },
+              "OutlineWidth": 1,
+              "Overflow": 0,
+              "OverrideSorting": false,
+              "Padding": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "SizeFit": false,
+              "SortingLayer": "UI",
+              "Text": "도달 1층 · 처치 0 · 메소 0",
+              "UseConstraintX": false,
+              "UseConstraintY": false,
+              "UseOutLine": false,
+              "Enable": true
+            }
+          ],
+          "@version": 1
+        }
+      },
+      {
+        "id": "393a9a12-ca34-450e-9eab-140bfe2a85aa",
+        "path": "/ui/GameClearGroup/Root/Panel/ScoreText",
+        "componentNames": "MOD.Core.UITransformComponent,MOD.Core.SpriteGUIRendererComponent,MOD.Core.TextComponent",
+        "jsonString": {
+          "name": "ScoreText",
+          "path": "/ui/GameClearGroup/Root/Panel/ScoreText",
+          "nameEditable": true,
+          "enable": true,
+          "visible": true,
+          "localize": true,
+          "displayOrder": 4,
+          "pathConstraints": "/////",
+          "revision": 0,
+          "origin": {
+            "type": "Model",
+            "entry_id": "UIText",
+            "sub_entity_id": null,
+            "root_entity_id": null,
+            "replaced_model_id": null
+          },
+          "modelId": "uitext",
+          "@components": [
+            {
+              "@type": "MOD.Core.UITransformComponent",
+              "ActivePlatform": 255,
+              "AlignmentOption": 0,
+              "AnchorsMax": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "AnchorsMin": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "MobileOnly": false,
+              "OffsetMax": {
+                "x": 360,
+                "y": 20
+              },
+              "OffsetMin": {
+                "x": -360,
+                "y": -24
+              },
+              "Pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "RectSize": {
+                "x": 720,
+                "y": 44
+              },
+              "UIMode": 1,
+              "UIScale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "UIVersion": 2,
+              "anchoredPosition": {
+                "x": 0,
+                "y": -2
+              },
+              "Position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "QuaternionRotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "Scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "Enable": true
+            },
+            {
+              "@type": "MOD.Core.SpriteGUIRendererComponent",
+              "AnimClipPlayType": 0,
+              "EndFrameIndex": 2147483647,
+              "ImageRUID": {
+                "DataId": ""
+              },
+              "IgnoreMapLayerCheck": false,
+              "LocalPosition": {
+                "x": 0,
+                "y": 0
+              },
+              "LocalScale": {
+                "x": 1,
+                "y": 1
+              },
+              "MaterialId": "",
+              "OrderInLayer": 0,
+              "OverrideSorting": false,
+              "PlayRate": 1,
+              "PreserveAspect": false,
+              "PreserveSprite": 0,
+              "SortingLayer": "UI",
+              "StartFrameIndex": 0,
+              "Color": {
+                "r": 1,
+                "g": 1,
+                "b": 1,
+                "a": 0
+              },
+              "DropShadow": false,
+              "DropShadowAngle": 120,
+              "DropShadowColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0.72
+              },
+              "DropShadowDistance": 3,
+              "FillAmount": 1,
+              "FillCenter": true,
+              "FillClockWise": true,
+              "FillMethod": 0,
+              "FillOrigin": 0,
+              "FlipX": false,
+              "FlipY": false,
+              "FrameColumn": 1,
+              "FrameRate": 0,
+              "FrameRow": 1,
+              "Outline": false,
+              "OutlineColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 1
+              },
+              "OutlineWidth": 3,
+              "RaycastTarget": false,
+              "Type": 0,
+              "Enable": true
+            },
+            {
+              "@type": "MOD.Core.TextComponent",
+              "Alignment": 4,
+              "AllowAutomaticTranslation": true,
+              "BestFit": false,
+              "Bold": true,
+              "ConstraintX": 100,
+              "ConstraintY": 100,
+              "DropShadow": false,
+              "DropShadowAngle": 120,
+              "DropShadowColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0.72
+              },
+              "DropShadowDistance": 3,
+              "Font": 0,
+              "FontColor": {
+                "r": 1,
+                "g": 0.8470588235294118,
+                "b": 0.4196078431372549,
+                "a": 1
+              },
+              "FontSize": 30,
+              "IgnoreMapLayerCheck": false,
+              "IsLocalizationKey": false,
+              "MaxSize": 42,
               "MinSize": 10,
               "OrderInLayer": 0,
               "OutlineColor": {
@@ -1216,7 +1419,7 @@
         }
       },
       {
-        "id": "2f0449f4-f290-4087-a8fc-290f552947bc",
+        "id": "3c34751f-5e88-4f94-a614-2516d2b81735",
         "path": "/ui/GameClearGroup/Root/Panel/BtnRestart",
         "componentNames": "MOD.Core.UITransformComponent,MOD.Core.SpriteGUIRendererComponent,MOD.Core.ButtonComponent,MOD.Core.TextComponent",
         "jsonString": {
@@ -1226,7 +1429,7 @@
           "enable": true,
           "visible": true,
           "localize": true,
-          "displayOrder": 4,
+          "displayOrder": 5,
           "pathConstraints": "/////",
           "revision": 0,
           "origin": {
@@ -1253,19 +1456,19 @@
               "MobileOnly": false,
               "OffsetMax": {
                 "x": -20,
-                "y": -68
+                "y": -91
               },
               "OffsetMin": {
-                "x": -300,
-                "y": -152
+                "x": -310,
+                "y": -179
               },
               "Pivot": {
                 "x": 0.5,
                 "y": 0.5
               },
               "RectSize": {
-                "x": 280,
-                "y": 84
+                "x": 290,
+                "y": 88
               },
               "UIMode": 1,
               "UIScale": {
@@ -1275,8 +1478,8 @@
               },
               "UIVersion": 2,
               "anchoredPosition": {
-                "x": -160,
-                "y": -110
+                "x": -165,
+                "y": -135
               },
               "Position": {
                 "x": 0,
@@ -1469,7 +1672,7 @@
         }
       },
       {
-        "id": "270d7a2e-910c-45c2-9360-18c6d4233bdd",
+        "id": "d186d353-e683-4485-9e08-15b8d8d92f83",
         "path": "/ui/GameClearGroup/Root/Panel/BtnLobby",
         "componentNames": "MOD.Core.UITransformComponent,MOD.Core.SpriteGUIRendererComponent,MOD.Core.ButtonComponent,MOD.Core.TextComponent",
         "jsonString": {
@@ -1479,7 +1682,7 @@
           "enable": true,
           "visible": true,
           "localize": true,
-          "displayOrder": 5,
+          "displayOrder": 6,
           "pathConstraints": "/////",
           "revision": 0,
           "origin": {
@@ -1505,20 +1708,20 @@
               },
               "MobileOnly": false,
               "OffsetMax": {
-                "x": 300,
-                "y": -68
+                "x": 310,
+                "y": -91
               },
               "OffsetMin": {
                 "x": 20,
-                "y": -152
+                "y": -179
               },
               "Pivot": {
                 "x": 0.5,
                 "y": 0.5
               },
               "RectSize": {
-                "x": 280,
-                "y": 84
+                "x": 290,
+                "y": 88
               },
               "UIMode": 1,
               "UIScale": {
@@ -1528,8 +1731,8 @@
               },
               "UIVersion": 2,
               "anchoredPosition": {
-                "x": 160,
-                "y": -110
+                "x": 165,
+                "y": -135
               },
               "Position": {
                 "x": 0,
