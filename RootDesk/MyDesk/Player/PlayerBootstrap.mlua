@@ -42,6 +42,9 @@ script PlayerBootstrap extends Logic
 			if player:GetComponent("script.CombatGizmo") == nil then
 				player:AddComponent("CombatGizmo")
 			end
+			if player:GetComponent("script.PlayerItemGizmo") == nil then
+				player:AddComponent("PlayerItemGizmo")
+			end
 		end
 		log("[PlayerBootstrap] combat components attached to " .. player.Name)
 		self:EnsureDashPreview(player)
