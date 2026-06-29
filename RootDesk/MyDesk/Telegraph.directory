@@ -1,7 +1,7 @@
 {
   "Id": "",
   "GameId": "",
-  "EntryKey": "directory://5e9905afea864fd694db16edea89795e",
+  "EntryKey": "directory://1c87383cc9944cf09aac45cc5ec81f6f",
   "ContentType": "x-mod/directory",
   "Content": "",
   "Usage": 0,
@@ -13,8 +13,8 @@
   "ContentProto": {
     "Use": "Json",
     "Json": {
-      "entry_id": "directory://5e9905afea864fd694db16edea89795e",
-      "name": "LevelDesign",
+      "entry_id": "directory://1c87383cc9944cf09aac45cc5ec81f6f",
+      "name": "Telegraph",
       "lock": false,
       "folding": false,
       "nameEditable": true
