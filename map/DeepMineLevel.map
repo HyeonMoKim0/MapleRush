@@ -66910,7 +66910,7 @@
                   "tileIndex": -1
                 },
                 {
-                  "type": 6,
+                  "type": 8,
                   "position": {
                     "x": 345,
                     "y": 22
@@ -66990,7 +66990,7 @@
                   "tileIndex": -1
                 },
                 {
-                  "type": 6,
+                  "type": 8,
                   "position": {
                     "x": 395,
                     "y": 22
@@ -67046,7 +67046,7 @@
                   "tileIndex": 4
                 },
                 {
-                  "type": 6,
+                  "type": 8,
                   "position": {
                     "x": 369,
                     "y": 22
@@ -67054,7 +67054,7 @@
                   "tileIndex": 0
                 },
                 {
-                  "type": 6,
+                  "type": 8,
                   "position": {
                     "x": 371,
                     "y": 22
@@ -67495,7 +67495,7 @@
       {
         "id": "a9ba0dba-506f-4eb0-8ddf-901187cb03c6",
         "path": "/maps/DeepMineLevel/RangedEnemy",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyRanged,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyRanged",
         "jsonString": {
           "name": "RangedEnemy",
           "path": "/maps/DeepMineLevel/RangedEnemy",
@@ -67554,19 +67554,6 @@
             },
             {
               "@type": "script.EnemyRanged",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
@@ -67576,7 +67563,7 @@
       {
         "id": "52daf6d1-d812-4af4-a8a7-ec3162d0fcd7",
         "path": "/maps/DeepMineLevel/MeleeEnemy",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee",
         "jsonString": {
           "name": "MeleeEnemy",
           "path": "/maps/DeepMineLevel/MeleeEnemy",
@@ -67635,19 +67622,6 @@
             },
             {
               "@type": "script.EnemyMelee",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
@@ -67657,7 +67631,7 @@
       {
         "id": "a8fb9114-3179-427c-9a73-4fbaf726300e",
         "path": "/maps/DeepMineLevel/RangedEnemy_1",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyRanged,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyRanged",
         "jsonString": {
           "name": "RangedEnemy_1",
           "path": "/maps/DeepMineLevel/RangedEnemy_1",
@@ -67716,19 +67690,6 @@
             },
             {
               "@type": "script.EnemyRanged",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
@@ -67738,7 +67699,7 @@
       {
         "id": "59614fe0-c500-4db0-b7a3-3f6b6d93b8e6",
         "path": "/maps/DeepMineLevel/MeleeEnemy_1",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee",
         "jsonString": {
           "name": "MeleeEnemy_1",
           "path": "/maps/DeepMineLevel/MeleeEnemy_1",
@@ -67797,19 +67758,6 @@
             },
             {
               "@type": "script.EnemyMelee",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
@@ -67819,7 +67767,7 @@
       {
         "id": "c729239b-77c2-40b0-8176-64f7b3c7f990",
         "path": "/maps/DeepMineLevel/MeleeEnemy_2",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee",
         "jsonString": {
           "name": "MeleeEnemy_2",
           "path": "/maps/DeepMineLevel/MeleeEnemy_2",
@@ -67878,19 +67826,6 @@
             },
             {
               "@type": "script.EnemyMelee",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
@@ -67900,7 +67835,7 @@
       {
         "id": "0ba0dd12-7136-48fe-aaac-1740e18197bf",
         "path": "/maps/DeepMineLevel/RangedEnemy_2",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyRanged,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyRanged",
         "jsonString": {
           "name": "RangedEnemy_2",
           "path": "/maps/DeepMineLevel/RangedEnemy_2",
@@ -67959,19 +67894,6 @@
             },
             {
               "@type": "script.EnemyRanged",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
@@ -67981,7 +67903,7 @@
       {
         "id": "6d4d101d-9e45-4c91-9265-4e7d949379e1",
         "path": "/maps/DeepMineLevel/RangedEnemy_3",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyRanged,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyRanged",
         "jsonString": {
           "name": "RangedEnemy_3",
           "path": "/maps/DeepMineLevel/RangedEnemy_3",
@@ -68040,19 +67962,6 @@
             },
             {
               "@type": "script.EnemyRanged",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
@@ -68062,7 +67971,7 @@
       {
         "id": "54129e93-dd4c-4c45-bc85-06ebd828d475",
         "path": "/maps/DeepMineLevel/MeleeEnemy_3",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee",
         "jsonString": {
           "name": "MeleeEnemy_3",
           "path": "/maps/DeepMineLevel/MeleeEnemy_3",
@@ -68121,19 +68030,6 @@
             },
             {
               "@type": "script.EnemyMelee",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
@@ -68143,7 +68039,7 @@
       {
         "id": "97f2679b-1394-4de1-a3b4-ac68fb349b7f",
         "path": "/maps/DeepMineLevel/MeleeEnemy_4",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee",
         "jsonString": {
           "name": "MeleeEnemy_4",
           "path": "/maps/DeepMineLevel/MeleeEnemy_4",
@@ -68202,19 +68098,6 @@
             },
             {
               "@type": "script.EnemyMelee",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
@@ -68224,7 +68107,7 @@
       {
         "id": "e1bf12a2-dedb-4ac1-93b2-bf170a48e635",
         "path": "/maps/DeepMineLevel/RangedEnemy_4",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyRanged,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyRanged",
         "jsonString": {
           "name": "RangedEnemy_4",
           "path": "/maps/DeepMineLevel/RangedEnemy_4",
@@ -68283,19 +68166,6 @@
             },
             {
               "@type": "script.EnemyRanged",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
@@ -68305,7 +68175,7 @@
       {
         "id": "f7eed357-3155-43c2-838f-51bd1e5925fe",
         "path": "/maps/DeepMineLevel/MeleeEnemy_5",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee",
         "jsonString": {
           "name": "MeleeEnemy_5",
           "path": "/maps/DeepMineLevel/MeleeEnemy_5",
@@ -68364,19 +68234,6 @@
             },
             {
               "@type": "script.EnemyMelee",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
@@ -68386,7 +68243,7 @@
       {
         "id": "5f443f79-4500-40a3-97f8-5b56efb633b4",
         "path": "/maps/DeepMineLevel/MeleeEnemy_6",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee",
         "jsonString": {
           "name": "MeleeEnemy_6",
           "path": "/maps/DeepMineLevel/MeleeEnemy_6",
@@ -68445,19 +68302,6 @@
             },
             {
               "@type": "script.EnemyMelee",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
@@ -68467,7 +68311,7 @@
       {
         "id": "c56573e1-421f-47bb-9bb4-007fa08a26c4",
         "path": "/maps/DeepMineLevel/RangedEnemy_5",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyRanged,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyRanged",
         "jsonString": {
           "name": "RangedEnemy_5",
           "path": "/maps/DeepMineLevel/RangedEnemy_5",
@@ -68526,19 +68370,6 @@
             },
             {
               "@type": "script.EnemyRanged",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
@@ -68548,7 +68379,7 @@
       {
         "id": "90663c2f-d991-4814-8c98-62c113e1b000",
         "path": "/maps/DeepMineLevel/MeleeEnemy_7",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee",
         "jsonString": {
           "name": "MeleeEnemy_7",
           "path": "/maps/DeepMineLevel/MeleeEnemy_7",
@@ -68607,19 +68438,6 @@
             },
             {
               "@type": "script.EnemyMelee",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
@@ -68629,7 +68447,7 @@
       {
         "id": "e78ebad7-b136-44d4-a0bd-2aea3e9f9b54",
         "path": "/maps/DeepMineLevel/RangedEnemy_6",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyRanged,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyRanged",
         "jsonString": {
           "name": "RangedEnemy_6",
           "path": "/maps/DeepMineLevel/RangedEnemy_6",
@@ -68688,19 +68506,6 @@
             },
             {
               "@type": "script.EnemyRanged",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
@@ -68710,7 +68515,7 @@
       {
         "id": "3ab14fac-8ab9-4810-9e2c-4cf8dd312354",
         "path": "/maps/DeepMineLevel/MeleeEnemy_8",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee",
         "jsonString": {
           "name": "MeleeEnemy_8",
           "path": "/maps/DeepMineLevel/MeleeEnemy_8",
@@ -68769,19 +68574,6 @@
             },
             {
               "@type": "script.EnemyMelee",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
@@ -68791,7 +68583,7 @@
       {
         "id": "a4d54644-29c8-474b-8927-0a27400a9612",
         "path": "/maps/DeepMineLevel/MeleeEnemy_9",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee",
         "jsonString": {
           "name": "MeleeEnemy_9",
           "path": "/maps/DeepMineLevel/MeleeEnemy_9",
@@ -68850,19 +68642,6 @@
             },
             {
               "@type": "script.EnemyMelee",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
@@ -68872,7 +68651,7 @@
       {
         "id": "de5d3231-f95b-4c50-a047-9f11d5d2ed90",
         "path": "/maps/DeepMineLevel/MeleeEnemy_10",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee",
         "jsonString": {
           "name": "MeleeEnemy_10",
           "path": "/maps/DeepMineLevel/MeleeEnemy_10",
@@ -68931,19 +68710,6 @@
             },
             {
               "@type": "script.EnemyMelee",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
@@ -68953,7 +68719,7 @@
       {
         "id": "4ea9b2e2-7b81-402c-b62b-45cd24a40739",
         "path": "/maps/DeepMineLevel/RangedEnemy_7",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyRanged,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyRanged",
         "jsonString": {
           "name": "RangedEnemy_7",
           "path": "/maps/DeepMineLevel/RangedEnemy_7",
@@ -69012,19 +68778,6 @@
             },
             {
               "@type": "script.EnemyRanged",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
@@ -69034,7 +68787,7 @@
       {
         "id": "c214c2ea-0234-4654-96fc-a50a378e6f64",
         "path": "/maps/DeepMineLevel/RangedEnemy_8",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyRanged,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyRanged",
         "jsonString": {
           "name": "RangedEnemy_8",
           "path": "/maps/DeepMineLevel/RangedEnemy_8",
@@ -69093,19 +68846,6 @@
             },
             {
               "@type": "script.EnemyRanged",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
@@ -69115,7 +68855,7 @@
       {
         "id": "3174c6f9-eac9-4f73-a891-f9365f97a89a",
         "path": "/maps/DeepMineLevel/MeleeEnemy_11",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee",
         "jsonString": {
           "name": "MeleeEnemy_11",
           "path": "/maps/DeepMineLevel/MeleeEnemy_11",
@@ -69174,19 +68914,6 @@
             },
             {
               "@type": "script.EnemyMelee",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
@@ -69196,7 +68923,7 @@
       {
         "id": "99c773be-ea09-43ee-af1a-239270bf8da4",
         "path": "/maps/DeepMineLevel/RangedEnemy_9",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyRanged,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyRanged",
         "jsonString": {
           "name": "RangedEnemy_9",
           "path": "/maps/DeepMineLevel/RangedEnemy_9",
@@ -69255,19 +68982,6 @@
             },
             {
               "@type": "script.EnemyRanged",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
@@ -69277,7 +68991,7 @@
       {
         "id": "b535a5c4-6380-422d-a5cc-2172a8cf07cc",
         "path": "/maps/DeepMineLevel/MeleeEnemy_12",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee",
         "jsonString": {
           "name": "MeleeEnemy_12",
           "path": "/maps/DeepMineLevel/MeleeEnemy_12",
@@ -69336,19 +69050,6 @@
             },
             {
               "@type": "script.EnemyMelee",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
@@ -69358,7 +69059,7 @@
       {
         "id": "604ee3a8-8f43-477c-bd11-a91805e27d2d",
         "path": "/maps/DeepMineLevel/MeleeEnemy_13",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee",
         "jsonString": {
           "name": "MeleeEnemy_13",
           "path": "/maps/DeepMineLevel/MeleeEnemy_13",
@@ -69417,19 +69118,6 @@
             },
             {
               "@type": "script.EnemyMelee",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
@@ -70073,7 +69761,7 @@
       {
         "id": "cd03027e-846e-4a78-8c48-38ae99b81d0e",
         "path": "/maps/DeepMineLevel/RangedEnemy_10",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyRanged,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyRanged",
         "jsonString": {
           "name": "RangedEnemy_10",
           "path": "/maps/DeepMineLevel/RangedEnemy_10",
@@ -70132,19 +69820,6 @@
             },
             {
               "@type": "script.EnemyRanged",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
@@ -70154,7 +69829,7 @@
       {
         "id": "b7e6ceb0-9f82-484e-b04b-d5c10e8de073",
         "path": "/maps/DeepMineLevel/RangedEnemy_11",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyRanged,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyRanged",
         "jsonString": {
           "name": "RangedEnemy_11",
           "path": "/maps/DeepMineLevel/RangedEnemy_11",
@@ -70213,19 +69888,6 @@
             },
             {
               "@type": "script.EnemyRanged",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
@@ -70235,7 +69897,7 @@
       {
         "id": "03da7fe4-2120-4a14-a4c8-da642977931e",
         "path": "/maps/DeepMineLevel/MeleeEnemy_14",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee",
         "jsonString": {
           "name": "MeleeEnemy_14",
           "path": "/maps/DeepMineLevel/MeleeEnemy_14",
@@ -70294,19 +69956,6 @@
             },
             {
               "@type": "script.EnemyMelee",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
@@ -70316,7 +69965,7 @@
       {
         "id": "8c83694f-a1fe-4d8c-af74-0b36c333b00e",
         "path": "/maps/DeepMineLevel/MeleeEnemy_15",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee",
         "jsonString": {
           "name": "MeleeEnemy_15",
           "path": "/maps/DeepMineLevel/MeleeEnemy_15",
@@ -70375,19 +70024,6 @@
             },
             {
               "@type": "script.EnemyMelee",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
@@ -70397,7 +70033,7 @@
       {
         "id": "6a599f51-7c59-41a5-8960-b51aa4dd915c",
         "path": "/maps/DeepMineLevel/MeleeEnemy_16",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee",
         "jsonString": {
           "name": "MeleeEnemy_16",
           "path": "/maps/DeepMineLevel/MeleeEnemy_16",
@@ -70456,19 +70092,6 @@
             },
             {
               "@type": "script.EnemyMelee",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
@@ -70760,7 +70383,7 @@
       {
         "id": "685ccab2-80cd-4220-9ccd-844e2f654847",
         "path": "/maps/DeepMineLevel/MeleeEnemy_17",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee",
         "jsonString": {
           "name": "MeleeEnemy_17",
           "path": "/maps/DeepMineLevel/MeleeEnemy_17",
@@ -70819,19 +70442,6 @@
             },
             {
               "@type": "script.EnemyMelee",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
@@ -70841,7 +70451,7 @@
       {
         "id": "a1551121-26d9-4d8c-94fc-9482e190409a",
         "path": "/maps/DeepMineLevel/RangedEnemy_12",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyRanged,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyRanged",
         "jsonString": {
           "name": "RangedEnemy_12",
           "path": "/maps/DeepMineLevel/RangedEnemy_12",
@@ -70900,19 +70510,6 @@
             },
             {
               "@type": "script.EnemyRanged",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
@@ -70922,7 +70519,7 @@
       {
         "id": "c220b3d2-1283-426d-9811-23a21ad5616a",
         "path": "/maps/DeepMineLevel/MeleeEnemy_18",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee",
         "jsonString": {
           "name": "MeleeEnemy_18",
           "path": "/maps/DeepMineLevel/MeleeEnemy_18",
@@ -70981,19 +70578,6 @@
             },
             {
               "@type": "script.EnemyMelee",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
@@ -71003,7 +70587,7 @@
       {
         "id": "cd4250db-7d8d-4f0d-8ba1-6193eb8da63c",
         "path": "/maps/DeepMineLevel/MeleeEnemy_19",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee",
         "jsonString": {
           "name": "MeleeEnemy_19",
           "path": "/maps/DeepMineLevel/MeleeEnemy_19",
@@ -71062,19 +70646,6 @@
             },
             {
               "@type": "script.EnemyMelee",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
@@ -71084,7 +70655,7 @@
       {
         "id": "e9bb92b2-8ebd-42ea-9e6f-8299785c73e3",
         "path": "/maps/DeepMineLevel/RangedEnemy_13",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyRanged,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyRanged",
         "jsonString": {
           "name": "RangedEnemy_13",
           "path": "/maps/DeepMineLevel/RangedEnemy_13",
@@ -71143,19 +70714,6 @@
             },
             {
               "@type": "script.EnemyRanged",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
@@ -72045,87 +71603,6 @@
               "SortingLayer": "MapLayer0",
               "SpriteRUID": "8056a76bdca542b18199515887f48bb0",
               "StartFrameIndex": 0,
-              "Enable": true
-            }
-          ],
-          "@version": 1
-        }
-      },
-      {
-        "id": "73c51b5d-301b-4243-a9c6-638539cae1b8",
-        "path": "/maps/DeepMineLevel/MeleeEnemy_20",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.RigidbodyComponent,script.EnemyHealth,script.EnemyMelee,MOD.Core.SideviewbodyComponent,MOD.Core.MovementComponent",
-        "jsonString": {
-          "name": "MeleeEnemy_20",
-          "path": "/maps/DeepMineLevel/MeleeEnemy_20",
-          "nameEditable": true,
-          "enable": true,
-          "visible": true,
-          "localize": false,
-          "displayOrder": 72,
-          "pathConstraints": "///",
-          "revision": 1,
-          "origin": {
-            "type": "Model",
-            "entry_id": "meleeenemy",
-            "sub_entity_id": null,
-            "root_entity_id": "63906d37-090b-4c55-b61a-56dbdc49bead",
-            "replaced_model_id": null
-          },
-          "modelId": "meleeenemy",
-          "@components": [
-            {
-              "@type": "MOD.Core.TransformComponent",
-              "Position": {
-                "x": 2.99049449,
-                "y": -3.244494,
-                "z": 999.999
-              },
-              "QuaternionRotation": {
-                "x": 0.0,
-                "y": 0.0,
-                "z": 0.0,
-                "w": 1.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.SpriteRendererComponent",
-              "ActionSheet": {},
-              "RenderSetting": 0,
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.RigidbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "RealMoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "script.EnemyHealth",
-              "Enable": true
-            },
-            {
-              "@type": "script.EnemyMelee",
-              "Enable": true,
-              "mapKindCache": 0
-            },
-            {
-              "@type": "MOD.Core.SideviewbodyComponent",
-              "MoveVelocity": {
-                "x": 0.0,
-                "y": 0.0
-              },
-              "Enable": true
-            },
-            {
-              "@type": "MOD.Core.MovementComponent",
               "Enable": true
             }
           ],
