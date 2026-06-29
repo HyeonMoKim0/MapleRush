@@ -44,9 +44,9 @@ script UIToast extends Logic
 		slot.bornAt = self._T.seq
 		slot.text.Text = message
 		if isSuccess then
-			slot.bg.Color = Color(0.06, 0.34, 0.32, 0.95)
+			slot.bg.Color = Color(0.06, 0.34, 0.32, 0.72)
 		else
-			slot.bg.Color = Color(0.42, 0.08, 0.13, 0.95)
+			slot.bg.Color = Color(0.42, 0.08, 0.13, 0.72)
 		end
 		slot.cg.GroupAlpha = 0
 		self.toastGroup.Enable = true

@@ -91,7 +91,7 @@ script RewardController extends Component
 	method void OnItemClick(ButtonClickEvent event)
 		-- 아이템 수령: 가방 가득이면 수령 불가(실패 토스트, 버리기로 처리) / 빈 칸 있으면 지급.
 		if self:IsInventoryFull() then
-			_UIToast:ShowMessage("가방이 가득 찼습니다 — 버리기를 선택하세요", false)
+			_UIToast:ShowMessage("가방이 가득 찼습니다", false)
 			log("[RewardController] item claim blocked: inventory full")
 			return
 		end
