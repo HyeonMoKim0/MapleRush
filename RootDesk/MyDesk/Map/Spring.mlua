@@ -1,0 +1,32 @@
+@Component
+script Spring extends TriggerComponent
+
+	method void OnEnterTriggerBody(TriggerEnterEvent enterEvent)
+		__base:OnEnterTriggerBody(enterEvent)
+		
+		    --점프대와 충돌한 대상(플레이어)을 받아옵니다.
+		    local player = enterEvent.TriggerBodyEntity
+		    log(player.Name)
+		    --플레이어의 MovementComponent 컴포넌트를 받아옵니다. 만일 대상에 MovementComponent 없으면 함수를 끝냅니다.
+		    local rigidbody = player.RigidbodyComponent
+		    if rigidbody == nil then
+		    	return
+		    end
+		
+		    -- 플레이어의 PlayerControllerComponent 확인 (플레이어만 통과, 적/기타 제외)
+				local controller = player.PlayerControllerComponent
+				if controller == nil then
+					return
+				end
+		
+				-- 현재 수평 이동속도(MoveVelocity.x)를 유지하고 Y축으로만 튕겨 올린다.
+				local vx = rigidbody.MoveVelocity.x
+				if vx > 0 then --튕겨져 나갈 때 이동속도가 너무 느리므로 보정
+					vx = vx + 1
+				else
+					vx = vx - 1
+				end
+				rigidbody:SetForce(Vector2(vx, 15))
+	end
+
+end
