@@ -1,15 +1,23 @@
 ---
 id: MR-R
 title: 사운드 시스템 (SoundManager + 볼륨 + SFX/BGM 배선, 타격음 포함)
-status: in-progress
+status: review
 owner: D4LGONA
 area: script
 touches:
-  - RootDesk/MyDesk/Core/HitFeedback.mlua
+  - RootDesk/MyDesk/Sound/SoundManager.mlua
+  - RootDesk/MyDesk/Sound/SoundTable.userdataset
+  - RootDesk/MyDesk/Sound/SoundTable.csv
+  - RootDesk/MyDesk/Stage/FloorManager.mlua
+  - RootDesk/MyDesk/Stage/StageManager.mlua
+  - RootDesk/MyDesk/Enemy/EnemyHealth.mlua
+  - RootDesk/MyDesk/Enemy/Boss/BossController.mlua
+  - RootDesk/MyDesk/Enemy/Boss/GroggyGauge.mlua
+  - RootDesk/MyDesk/UI/LobbyController.mlua
 depends_on: []
 branch: "D4LGONA/sound-volume-settings"
 created: 2026-07-01
-updated: 2026-07-01
+updated: 2026-07-02
 ---
 
 # 사운드 시스템 (SoundManager + 볼륨 + SFX/BGM 배선, 타격음 포함)
@@ -18,17 +26,27 @@ updated: 2026-07-01
 게임 전반의 사운드를 중앙 `SoundManager` 경유로 통일한다. 모든 SFX는 `SoundManager.PlaySFX`, 배경음은 `PlayBGM`으로 재생하고 볼륨을 제어한다. 여기에 **MR-Q 타격감의 타격음**을 포함해 실제로 소리가 나도록 마무리한다. (작업은 기존 브랜치 `D4LGONA/sound-volume-settings`에서 진행)
 
 ## Acceptance criteria
-- [ ] `SoundManager`(SFX/BGM 재생 + 볼륨 API)가 마스터에 통합
-- [ ] 모든 게임 SFX가 `SoundManager.PlaySFX` 경유(직접 `_SoundService:PlaySound` 산재 금지), BGM은 `PlayBGM`
-- [ ] **타격음(MR-Q) 연결** — 적 타격 시 타격음 1회 재생. `HitFeedback`의 SFX 재생을 SoundManager 경유로 전환하고 타격음 RUID 지정
-- [ ] 볼륨 설정이 실제로 SFX/BGM에 반영
-- [ ] build/runtime 에러 0
+- [x] `SoundManager`(SFX/BGM 재생 + 볼륨 API)가 마스터에 통합
+- [x] 모든 게임 SFX가 `SoundManager` 경유(직접 `_SoundService:PlaySound` 산재 없음 — SoundManager 내부 1곳뿐), BGM은 `PlayBGM`
+- [x] **타격음(MR-Q) 연결** — 적 피격 시 `sfx_enemy_hit` 재생(`EnemyHealth.PlayHitEffect` → SoundManager 경유)
+- [x] 볼륨 설정이 실제로 SFX/BGM에 반영 (로비 슬라이더 → SetBgm/SetSfxVolume)
+- [x] build/runtime 에러 0
+
+> ⚠️ **범위 정의**: MR-R = "사운드 시스템 + 지금 이벤트 훅이 있는 소리들의 배선". CSV엔 준비됐으나 **다른 작업 선행이 필요한 17종은 MR-R 범위 밖**(아래 후속 참조). 수용 기준은 시스템 완성 + 배선 가능분 완료 기준으로 충족.
 
 ## Subtasks
-- [ ] (작업 시작 시 owner가 채움)
-- [ ] SoundManager 설계/통합 (기존 sound-volume-settings 브랜치 정리)
-- [ ] 타격음 SFX RUID 확보(msw-search) + HitFeedback 연결 (현재 `_SoundService:PlaySound` 직접 호출 → SoundManager 경유로 교체)
-- [ ] 기타 핵심 SFX 배선(버튼/공격/획득 등) — 범위 협의
+- [x] SoundManager 설계/통합 (SoundTable UserDataSet 외부화 — 키 기반 재생 + 프리로드 + 전역 UI 클릭 후킹)
+- [x] 타격음(MR-Q) SoundManager 경유 연결
+- [x] 핵심 SFX 배선: 공격/대시/슬로우/아이템3/상점/UI클릭
+- [x] BGM 배선: 타이틀 + 스테이지 3테마(`bgm_<theme>`)
+- [x] 플레이어 사망음 + 보스 공격/사망/그로기음
+- [x] 볼륨 슬라이더 연동 + 이중 재생 정리
+- [x] SoundTable.csv `#wired` 컬럼로 배선 현황 문서화
+
+## 후속 (MR-R 범위 밖 — 선행 작업 필요)
+- **적 종족음 10종** (`todo:species`) → **MR-V**(신규 적 유형)에서 종족 태그 추가 후 배선.
+- **능력음 5종** (`todo:map?`) → 능력 2종↔키 5종 매핑 결정 필요. **후속 티켓 미생성**.
+- **스토리 BGM 2종** (`todo`) → 스토리 인트로 화면 구현 필요. **후속 티켓 미생성**.
 
 ## Notes / decisions
 - 관련 메모리 [[sound-volume-architecture]]: 모든 SFX는 SoundManager.PlaySFX 경유(전역 SFX 볼륨 API 없음), 배경음은 PlayBGM.
